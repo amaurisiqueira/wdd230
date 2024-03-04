@@ -1,0 +1,17 @@
+@media only screen and (max-width: 32.5em) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: block;
+    justify-content: center;
+  
+  }
+
+  .myContainerGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
