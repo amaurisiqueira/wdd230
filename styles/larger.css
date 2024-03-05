@@ -5,9 +5,11 @@
   /* change the values below to your colors from your palette */
   --primary-color: #964b00;
   --secondary-color: #f5f5dc;
-  --accent1-color: #cc7722;
-  --accent2-color: #e2725b;
-
+ /* --accent1-color: #cc7722; */
+  --accent1-color: #ECC079;
+  --accent2-color: #07551A; /* #075F1D;*/
+  
+  
   /* change the values below to your chosen font(s) */
   --heading-font: "Noto Serif Malayalam", serif;
   --paragraph-font: "Sintony", sans-serif;
@@ -23,7 +25,8 @@
   ); /* paragraph text on a colored background */
   --paragraph-background-color: #964b00;
   --nav-link-color: #964b00;
-  --nav-background-color: #d4ac0d;
+  
+  --nav-background-color: var(--accent1-color); /*     EBBC70  */ 
   --nav-hover-link-color: var(--accent2-color);
   --nav-hover-background-color: var(--secondary-color);
 
@@ -86,6 +89,7 @@ p {
 
 nav {
   background-color: var(--nav-background-color);
+ 
  /* margin: 0 auto; */
   display: flex;
   flex-direction: row; 
@@ -101,6 +105,7 @@ nav {
 }
 
 nav ul {
+ 
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -110,6 +115,7 @@ nav ul {
 }
 
 nav a {
+  color: var( --accent2-color);
   /**/
   /*min-width: 120px;
 */
@@ -170,13 +176,18 @@ nav .active {
   list-style-type: none;
 }
 
-.myContainerGrid li {
+.myContainerGrid ul li {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   text-decoration: none;
   list-style-type: none;
 }
 
+.myContainerGrid ul li a {
+  color: var(--nav-hover-link-color);
+
+}
+ 
 .learning-activity {
   border: rgba(0, 0, 0, 0.1) solid 1px;
 }
@@ -213,5 +224,5 @@ footer p {
 }
 
 #myLastChange {
-    color: #ebdb2e;
+    color: #F6F4A7;
 }
