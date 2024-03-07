@@ -223,6 +223,15 @@ footer p {
   font-size: 1.3em;
 }
 
-#myLastChange {
-    color: #F6F4A7;
+.navigation li {
+  display: block; /* change state in small view */
+  flex: 1 1 100%;
+}
+.navigation a {
+  text-align: center;
+}
+
+#menu {
+  text-align: left;
+  display: none;
 }
