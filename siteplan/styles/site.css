@@ -1,0 +1,721 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam&family=Sintony&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
+
+ 
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #3F6634   ;
+  --secondary-color: #F5F5DC ;
+  --accent1-color: #A882DD;
+  --accent2-color: #188FA7;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Noto Serif Malayalam', serif;
+  --paragraph-font: 'Sintony', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #3F6634;  /* headlines on a white background */ 
+  --headline-color-on-color: var(--secondary-color); /* headlines on a colored background */ 
+  --paragraph-color-on-white: #3F6634; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--secondary-color);; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #3F6634  ;
+  --nav-link-color: var ( --secondary-color ) ; /* #3F6634; */
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--secondary-color);
+
+  --background-footer-color: var( --accent2-color);
+  --paragraph-footer-color: white;
+  --MAX-WIDTH:1200px;
+}
+
+
+/*  Look around below...but DON'T CHANGE ANYTHING! */
+
+body {
+  max-width: var(--MAX-WIDTH);/*1200px;*/
+  margin: 0 auto;
+  padding: 4em;
+  font-size: 18px;
+  text-align: center;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+h2 {
+  text-align: center;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent1-color);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+header > h1, header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 1em;
+}
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);;
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);;
+  
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav  {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  /*  grid-column-gap: 1px; */
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "  page2 page2. page3. page4"; 
+  /*  grid-template-areas: 
+    ". . home home . ."
+    ". . . top . ."
+    ".  left right right ."
+    "page2 page2. page3 .page4"; */
+  
+ 
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  width: 100px;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page3 {
+  width: 80px;
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  width: 90px;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.logo {
+  width: 80px;
+  padding: 0px;
+  display: block;
+  padding-top: 5px;
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
+
+.logo_especias {
+    border-radius: 50%;
+    width: 150px;
+}
+.main-header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+.wireframes-images,
+.img-main ,
+.img-page2 ,
+.img-page3 ,
+.img-page4  {
+    width: 400px;
+    
+    margin:10px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+
+.wireframes-images  {
+    width: 100%;
+    
+    margin:10px;
+  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+  
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  /* make this element invisible until we are ready for it */
+  display: none;      
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+
+#img-contactus-without-box   {
+  margin-bottom: 20px;
+  width: 50%;
+  display: block;
+  /*align-items: center;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#img-contactus-in-box {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 33%;
+  display: block;
+  align-items: center;
+}
+
+ 
+#formulary_of_contact {
+  display: grid;
+  grid-template-columns: 200px 2fr;
+  border: 2px black solid;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ 
+.div_form_contact {
+  grid-row: 1/2;
+  grid-column: 1/6;
+} 
+
+#label_name {
+  
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 45PX;
+  margin-top: 15PX;
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#name {
+
+  grid-row: 3/4;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+
+  margin-left: 45PX;
+  margin-right: 45PX;
+  font-family:var(--heading-font);
+  
+  font-size: 1.2em;
+  color: var(--headline-color-on-white);
+}
+ 
+#label_mail {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 45PX;
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#mail {
+  grid-row: 5/6;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+  margin-left: 45PX;
+  margin-right: 45PX;
+  font-family:var(--heading-font);
+ 
+  font-size: 1.2em;
+  color: var(--headline-color-on-white);
+}
+
+
+#label_userMessage_form_contact {
+  grid-row: 6/7;
+  grid-column: 1/6;
+  align-items: start;
+  align-content: start;
+  
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 45PX;
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#msg {
+  height: 8em;
+  grid-row: 7/12;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+  margin-left: 45PX;
+  margin-right: 45PX;
+  margin-bottom: 15px;
+  font-family:var(--heading-font);
+  font-size: 1.2em;
+ 
+  color: var(--headline-color-on-white);
+}
+
+.div_submit_form_contact   {
+  grid-row: 13/14;
+  grid-column: 1/6;
+  margin-bottom: 15px;
+  font-family:var(--heading-font);
+   
+  color: var(--headline-color-on-white);
+}
+
+#submit_form_contact
+{
+ 
+
+  
+  align-content: center;
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+ /* display: flex;*/
+  flex-direction: column;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 15px;
+  font-family:var(--heading-font);
+  font-size: 1.5em;
+   
+  color: var(--headline-color-on-white);
+} 
+/*
+ 
+ 
+ 
+<div class="div_form_contact">
+ <button  name="submit_form_contact" type="submit">Send your message</button>
+</div>
+
+*/
+
+/*
+#######page detail###################################################
+*/
+.page-detail-img {
+  width: 100%;
+}
+
+/* 
+################## Main page ##################
+ */
+  
+
+/* Section 1*/
+
+.wrap_one {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.grid-container_one {
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  grid-template-rows: 1fr;  
+  gap: 20px;  
+}
+
+.text-column_one {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+ body p {
+  font-size: 1em; 
+  text-align: justify;
+ }
+
+.image-column_one {
+  grid-column: 2/3;
+  grid-row: 1/2;
+   
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+ 
+.img-container_one {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; 
+  overflow: hidden;
+  max-width: 100%;  
+}
+
+
+.img-container_one img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+
+.img_main_page_one {
+  object-fit: contain;
+  max-width: 500px;
+  height: 100%;
+  width: 100%;  
+}
+
+
+
+
+
+/*  section 3 */
+
+.wrap_three {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.grid-container_three {
+  display: grid;
+  grid-template-columns: 50% 50%;  
+  grid-template-rows: 1fr;  
+  gap: 20px;  
+}
+
+.text-column_three {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+
+.image-column_three {
+  grid-column: 2/3;
+  grid-row: 1/2;
+   
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+ 
+.img-container_three {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; 
+  overflow: hidden;
+  max-width: 100%;  
+}
+
+
+.img-container_three img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+
+.img_main_page_three {
+  object-fit: contain;
+  max-width: 500px;
+  height: 100%;
+  width: 100%;  
+}
+
+.page-detail-img {
+  width: 90%;
+  margin-top:50px;
+
+}
+
+.paraphrase-detail {
+  width: 90%;
+ 
+  display: block;
+  margin: 0 auto;
+}
+
+.page-detail-img2 {
+  width: 70%;
+  margin-top:50px;
+
+}
+
+.img_main_page_one,
+.img_main_page_three ,
+.page-detail-img ,
+.page-detail-img2  {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  
+}
+
+
+.img_main_page_one:hover,
+.img_main_page_three:hover ,
+.page-detail-img:hover ,
+.page-detail-img2:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease;  
+}
+
+
+/* Footer section   */
+
+
+footer  {
+  color: var(--paragraph-footer-color);
+  background-color: var(--background-footer-color);
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  color: var(--paragraph-footer-color);
+  background-color: var(--background-footer-color);
+ 
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+  
+}
+
+footer p {
+  font-size: 1.05em;
+  color: var(--paragraph-footer-color);
+  background-color: var(--background-footer-color);
+  
+}    
+
+footer p a:hover {
+  text-decoration: underline;
+  background-color: var(--nav-hover-background-color);
+}    
+    
+footer .social {
+  display: flex; 
+  gap: 10px;  
+}
+
+.social a {
+  display: inline-block; 
+}
+
+footer .social img {
+  padding-top: 15px;
+  background-color: var(--background-footer-color);
+  
+
+}
+
+ 
+
+.accordion {
+  font-family: var(--heading-font);
+
+  background-color: var(--nav-background-color);
+  /*color: var(--nav-hover-link-color); */
+  color: var(--headline-color-on-white);
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+ 
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+ 
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  
+ 
+  color: #777;
+  float: right;
+  margin-left: 5px;
+ 
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
