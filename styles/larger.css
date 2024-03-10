@@ -116,7 +116,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 , .unionH2 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -289,7 +289,13 @@ footer p {
   text-align: center;
 }
 
+.unionH2 {
+  display: flex;
+  
+  justify-content: center;
+}
 #menu {
   text-align: left;
   display: none;
 }
+
