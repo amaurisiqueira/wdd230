@@ -10,12 +10,13 @@
     <meta name="author" content="Amauri Siqueira">
     
     <!-- TODO -->
-    <meta property="og:title" content="The Church of Jesus Christ of Latter-day Saints">
-    <meta property="og:description" content="Official website of The Church of Jesus Christ of Latter-day Saints. Find messages of Christ to uplift your soul and invite the Spirit.">
-    <meta property="og:type" content="image/png" >
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image" content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png">
-    <meta property="og:url" content="https://churchofjesuschrist.org">
+    <!--Start meta OG-->
+    <meta
+      property="og:title" content="Barrio Italia Chamber of commerce | WDD 230 - Web Frontend Development - Amauri Siqueira"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image"      content="https://amaurisiqueira.github.io/wdd230/chamber/images/logo.png">
+    <meta property="og:url" content="https://amaurisiqueira.github.io/wdd230/chamber" >
     
     <!-- Hamburger
     
@@ -33,26 +34,37 @@
 <body>
     <header>
 
-        <img src="images/logo.png" id="logo" alt="logo">
-        <h1>Barrio Italia Chamber of Commerce</h1>
+        <img src="images/logo.png" 
+        id="logo" 
+        alt="logo of Barrio Italia Chamber of Commerce" 
+        >
+
+        <h1 class="chamberName">Barrio Italia Chamber of Commerce</h1>
       
-        <nav>
-            <ul>
-                <li><a href="#" onclick="myLoadPage('home.html')">Home</a></li>
-                <li><a href="#" onclick="myLoadPage('directory.html')">Directory</a></li>
-                <li><a href="#" onclick="myLoadPage('discover.html')">Discover</a></li>
-                <li><a href="#" onclick="myLoadPage('join.html')">Join</a></li>
+        <nav class="navbar">
+            <ul  class="menu navigation">
+                <li class="active"><a href="#" rel="noopener noreferrer" onclick="myLoadPage('home.html')">Home</a></li>
+                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('directory.html')">Directory</a></li>
+                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('discover.html')">Discover</a></li>
+                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('join.html')">Join</a></li>
             </ul>
         </nav>
-    
+        <div id="mode">🕶️</div>
     </header>
     <main id="contenido">
         <!-- Contenido de las páginas "hijas" se cargará aquí -->
     </main>
     <footer>
-        <p>Derechos de autor © 2024 Mi Sitio Web</p>
-    </footer>
+         
+          <p>
+            ©<span id="myCopyRightYear"></span>Barrio Italia Chamber of Commerce | <strong>Amauri Siqueira</strong> | WDD 230 Project | <span id="myLastChange"></span>
+          </p>
 
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getLastChange.js"></script>
+    <script src="scripts/getHamburgMenu.js"></script>
+    <script src="scripts/getDarkMode.js"></script>
     <script src="scripts/loadPages.js"></script>
 </body>
 </html>
