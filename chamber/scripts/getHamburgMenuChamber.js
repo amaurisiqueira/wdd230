@@ -1,15 +1,14 @@
 // Store the selected elements that we are going to use. 
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
-hambutton.innerHTML='';
-
+const mainnavChamber = document.querySelector('.navigation')
+const hambuttonChamber = document.querySelector('#menu');
+hambuttonChamber.textContent='';
+console.log('No1');
 
 // Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
-hambutton.addEventListener('click', () => {
+hambuttonChamber.addEventListener('click', () => {
 	
-	
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
+		mainnavChamber.classList.toggle('show');
+	   hambuttonChamber.classList.toggle('show');
 });
 
 /* ❔What does toggle mean?
