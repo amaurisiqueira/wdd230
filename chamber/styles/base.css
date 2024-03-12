@@ -1,160 +1,381 @@
-@media only screen and (max-width: 32.5em) {
-    nav {
-      flex-direction: column;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam&family=Sintony&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sintony&display=swap");
+
+
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #3F6634;
+  --secondary-color:#F5F5DC;
+  --accent1-color: #ff;/*#9fc1ff;*/
+  --accent2-color: #387c8a;/*#188FA7;*/
+
+  --primary-color-dark: #faf1e9;
+  /* Color principal más oscuro */
+  --secondary-color-dark: #262222;
+  /* Color secundario más oscuro */
+  --accent1-color-dark: #443a22; /*#443a22;*/
+  /* Primer acento más oscuro */
+  --accent2-color-dark: #14cc42;
+  /* Segundo acento más oscuro */
+
+  /* Otros ajustes */
+  --heading-color-on-dark: #fff;
+  /* Color de texto para títulos sobre fondo oscuro */
+  --paragraph-color-on-dark: #ccc;
+  /* Color de texto para párrafos sobre fondo oscuro */
+
+  --shadow-color-03: rgba(255,
+      255,
+      255,
+      0.3);
+  /*var(--nav-hover-background-color);*/
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Noto Serif Malayalam', serif;
+  --paragraph-font: 'Sintony', sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #3F6634;
+  /* headlines on a white background */
+  --headline-color-on-color: var(--secondary-color);
+  /* headlines on a colored background */
+  --paragraph-color-on-white: #3F6634;
+  /* paragraph text on a white background */
+  --paragraph-color-on-color: var(--secondary-color);
+  ;
+  /* paragraph text on a colored background */
+  --paragraph-background-color: #3F6634;
+  --nav-link-color: var(--secondary-color);
+  /* #3F6634; */
+  --nav-background-color: #d41a1ab2; /*#D4AC0D;*/
+  --nav-hover-link-color:  var(--accent2-color);
+  --nav-hover-background-color: var(--secondary-color);
+
+  --background-footer-color: var(--accent2-color);
+  --paragraph-footer-color: white;
+  --MAX-WIDTH: 1200px;
+}
+
+
+
+.dark-mode {
+
+  /* Cambios de color para los elementos principales */
+  --primary-color: var(--primary-color-dark);
+  --secondary-color: var(--secondary-color-dark);
+  --accent1-color: var(--accent1-color-dark);
+  --accent2-color: var(--accent2-color-dark);
+
+  /* Cambios de color para los textos */
+  --headline-color-on-white: var(--heading-color-on-dark);
+  --paragraph-color-on-white: var(--paragraph-color-on-dark);
+  --paragraph-footer-color: #5f1111;
+  --shadow-color-03: rgba(255, 255, 255, 0.1);
+
+
+  --headline-color-on-white: var(--primary-color-dark);
+  /* headlines on a white background */
+  --headline-color-on-color: var(--secondary-color-dark);
+  /* headlines on a colored background */
+  --paragraph-color-on-white: var(--primary-color-dark);
+  /* paragraph text on a white background */
+  --paragraph-color-on-color: var(--secondary-color-dark);
+  /* paragraph text on a colored background */
+  --paragraph-background-color: var(--primary-color-dark);
+  --nav-link-color: var(--accent1-color-color);
+  --nav-background-color: var(--accent2-color);
+  /*     EBBC70  */
+  --nav-hover-link-color: var(--accent2-color);
+  --nav-hover-background-color: var(--secondary-color);
+  --background-footer-color: var(--accent2-color);
+}
+
+
+#logo {
+
+  max-width:10%;   /* <-- change to 100% if you want the logo to fill the top on mobile */
   
-    nav ul {
-      list-style-type: none;
-      display: block;
-      justify-content: center;
+  margin: 0;
+  padding: 0;
+  
     
-    }
-  
-    .myContainerGrid {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
-  /*
-    .navbar {
-      display: block;
-      }
+}
 
-      .navigation {
-        flex-direction: column;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  max-width: 100%;
 
-      }
+}
 
-      .navigation li {
-        display: block;
-      }
+h2 {
+  text-align: center;
+}
+
+/*
+
+*/
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
+}
+
+.adjustLogoAndTitle {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+#mode {
+  /*color: var(--headline-color-on-color);*/
+  /*color: var(--primary-color);*/
+  font-size: 3rem;
+  cursor: pointer;
+  font-size: 2rem;
+  background-color: var(--paragraph-background-color); /*var(--secondary-color);*/
+  max-width: 100%;
+}
+
+/*
+img {
+  padding: 0px;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
 */
 
 
+.chamberName {
+  color: var(--secondary-color);
+  font-size: 1.6em;
+  padding: 4px;
+  padding-top: 0.4em;
+  margin: auto;
+  /* text-align: left; */
+}
 
+
+.chamberTitle {
+  font-size: smaller;
+  margin: auto;
+  padding: 4px;
+  color: var(--secondary-color);
+  /*border: #0d81d4 solid 5px; */
+}
+
+/*
+.comboNameAndTitle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  grid-column: 2/3;
+  padding: 0;
+  width: 9.6em;
+
+
+}
+*/
+.comboNameAndTitle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  /****  if you want the title centered use the below instead: ***/
+
+  /*
+  margin: auto;
+  text-align: center;
+  */
+}
+
+
+nav {
+  flex-direction: column;
+}
 
 
 .navigation {
+  
+  display: block;
   list-style: none;
-  margin: 0 auto;
-  max-width: 760px;
+  margin: auto;
+  background-color: var(--nav-background-color);
+  padding: 0;
 }
 
 .navigation li {
   display: none;
+  padding: 0;
+  
 }
+
 .navigation a {
+  margin: auto;
   display: block;
   padding: 0.75rem;
-  text-align: left;
+  text-align: center;
   text-decoration: none;
-  color:  var( --accent2-color);/* black;*/
+  color: var(--accent1-color);
+  /* black;*/
   font-weight: 700;
   transition: 0.5s;
   font-size: clamp(1rem, 2vmin, 1.5rem);
+
+}
+
+.navigation a:hover,
+.navigation a:active {
+  background-color: rgba(255, 255, 255, 0.3);
   
 }
 
-.navigation a:hover, .navigation a:active {
-  /*color: white;*/
-/*  background-color: black; */
-  background-color: rgba(255, 255, 255, 0.3); 
- 
-}
-      /*
-    .navigation {
-      list-style: none;
-      margin: 0 auto;
-      max-width: 760px;
-    }
-    
-    .navigation li {
-      display: none;
-    }
-    .navigation a {
-      display: block;
-      padding: 0.75rem;
-      text-align: left;
-      text-decoration: none;
-      color:  var( --accent2-color);
-      font-weight: 700;
-      transition: 0.5s;
-      font-size: clamp(1rem, 2vmin, 1.5rem);
-      
-    }
-    */
-    
-    .navigation a:hover, .navigation a:active {
-      /*color: white;*/
-    /*  background-color: black; */
-      background-color: rgba(255, 255, 255, 0.3); 
-     
-    }
-    
-    .show li {
-      display: block;
-    }
-    
-    #menu.show::before {
-      content: "X";
-    }
-  
-  
-  #myLastChange {
-    color: #F6F4A7;
-  }
+#menu {
 
-
-
-  #menu {
-  
-    display: block;
-    font-size: 2rem;
-    font-weight:700;
-    text-decoration: none;
-    padding: .5rem .75rem;
-     
-    background-color: var(--nav-background-color);; /* var(--paragraph-background-color); */
-    color:  var(--accent2-color);;
-    }
-    
-    #menu::before {
-    content: "≡";
-    }
-    
-    }
-
-/*  
-  
-  #menu {
-    
   display: block;
   font-size: 2rem;
-  font-weight:700;
+  font-weight: 700;
   text-decoration: none;
-  padding: .5rem .75rem;
-   
-  background-color: var(--nav-background-color);; 
-  color:  var(--accent2-color);;
-  }
+  padding: .5rem;
+  background-color: var(--nav-background-color);
   
-  #menu::before {
+  /* var(--paragraph-background-color); */
+  color: var(--accent1-color);
+  ;
+}
+
+#menu::before {
   content: "≡";
-  }
+}
+
+
+.show li {
   
-
-  .menu-toggle {
-    display: block;  Mostrar el icono de hamburguesa en pantallas pequeñas 
+  display: block;
 }
 
-.menu {
-    display: none;  Ocultar el menú por defecto en pantallas pequeñas 
-}
-
-.menu.active {
-    display: block;  Mostrar el menú cuando se active el botón de hamburguesa 
-}
-*/
-
-  }
+#menu.show::before {
   
+  content: "X";
+}
+
+
+body {
+  max-width: 100%;
+  margin: auto;
+  padding: 0.2em;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.homeRealImageHero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  color: var(--paragraph-footer-color);
+  background-color: var(--paragraph-background-color);
+  padding:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer p {
+  margin:0;
+  padding:0;
+  color: var(--paragraph-footer-color);
+  font-family: var(--heading-font);
+  font-size: smaller;
+}
+
+
+
+
+#myLastChange {
+  color: var( --paragraph-footer-color) ; /* #ffa; */
+}
+
+.call-to-action {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 30px;
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-footer-color);
+  
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+
+.myEventsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 5fr 1fr 5fr 5fr 5fr;
+  row-gap: 20px;
+}
+
+
+ .events {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-footer-color);
+      
+    border: red solid 2px;
+ }
+
+  .weather {
+    grid-column: 1/1;
+    grid-row: 2/3;
+    border: rgb(0, 47, 255) solid 2px;
+ }
+
+  
+  .label-member              {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    border: rgb(0, 255, 85) solid 2px;
+ }
+                
+  .sponsor1{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    border: rgb(238, 255, 0) solid 2px;
+ }
+
+  
+  .sponsor2 {
+    grid-column: 1/1;
+    grid-row: 5/6;
+    border: rgb(247, 0, 255) solid 2px;
+ }
+                    
+  .sponsor3{
+      grid-column: 1/1;
+      grid-row: 6/7;
+      border: rgb(0, 255, 242) solid 2px;
+   }
+                    

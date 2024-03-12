@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barrio Italia Chamber of Commerce</title>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Barrio Italia Chamber of commerce">
     <meta name="author" content="Amauri Siqueira">
@@ -25,8 +24,9 @@
     
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/larger.css" >
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" >
+
     <link rel="icon" href="images/favicon.ico">
 
 
@@ -34,6 +34,8 @@
 <body>
     <header>
 
+
+        <div class="adjustLogoAndTitle"> 
         <img src="images/logo.png" 
         id="logo" 
         alt="logo of Barrio Italia Chamber of Commerce" 
@@ -41,22 +43,53 @@
 
         <div class="comboNameAndTitle"> 
             <h1 class="chamberName">Barrio Italia</h1>
-            <h6 class="chamberTitle" >Chamber of Commerce</h6>
+            <p class="chamberTitle" >Chamber of Commerce</p>
         </div>
-        
+        </div>
         <nav class="navbar">
             <a id="menu" href="#" rel="noopener noreferrer">menu</a>    
             <ul  class="menu navigation">
-                <li class="active"><a href="#" rel="noopener noreferrer" onclick="myLoadPage('home.html')">Home</a></li>
-                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('directory.html')">Directory</a></li>
-                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('discover.html')">Discover</a></li>
-                <li><a href="#" rel="noopener noreferrer" onclick="myLoadPage('join.html')">Join</a></li>
+                <li class="active"><a href="index.html" rel="noopener noreferrer" >Home</a></li>
+                <li><a href="#" rel="noopener noreferrer">Directory</a></li>
+                <li><a href="#" rel="noopener noreferrer">Discover</a></li>
+                <li><a href="#" rel="noopener noreferrer">Join</a></li>
             </ul>
         </nav>
         <div id="mode">🕶️</div>
     </header>
-    <main id="contenido">
+    <main id="mycontenido">
         <!-- Contenido de las páginas "hijas" se cargará aquí -->
+        
+            <img class="homeRealImageHero" src="images/old-barrio-italia.webp" rel="Image of Barrio Italia"> 
+            <button class="call-to-action">Join</button>    
+        
+            
+            <section class="myEventsContainer">
+                <div class="events">
+                    <p class="events-title">Events</p>
+                    <p class="events-body strong">Ribbo</p>
+                    <p class="events-body ">loren </p>
+                </div>
+                <div class="weather">        
+                    <img class="weather-image">            
+                    <p class="weather-title">Weather</p>
+                    <p class="events-body strong">Ribbo</p>
+                    <p class="events-body ">loren </p>
+                </div>
+                <p class="label-member"></p>
+                <div class="sponsor1"> 
+
+                </div>
+                <div class="sponsor2"> 
+                    
+                </div>
+                <div class="sponsor3"> 
+                    
+                </div>
+            </section>
+
+            
+            
     </main>
     <footer>
          
