@@ -339,17 +339,31 @@ footer p {
 
 
  .events {
+    
+    display: block;
     grid-column: 1/1;
     grid-row: 1/2;
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-footer-color);
-      
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+
+
+   
     border: red solid 2px;
  }
+ .events-title .events-body .events-body{
+    margin: 0;
+    padding: 0;  
+   text-align: left;
+    font-family: 'Noto Serif Malayalam', serif; 
+    font-size: 1em;
+ }
+ 
+
 
   .weather {
     grid-column: 1/1;
     grid-row: 2/3;
+    font-family: 'Noto Serif Malayalam', serif; 
     border: rgb(0, 47, 255) solid 2px;
  }
 
