@@ -46,6 +46,7 @@
 
   --background-footer-color: var(--accent2-color);
   --paragraph-footer-color: #ffe6f6;
+  --span-color: var(--accent2-color);
   --MAX-WIDTH: 1200px;
 }
 
@@ -79,7 +80,7 @@
 
 --background-footer-color: var(--accent2-color);
 
-
+--span-color: var(--paragraph-footer-color);
 
 
 }
@@ -328,8 +329,8 @@ footer p {
   font-size: 1.5em;
   font-weight: 800;
  
-  background-color: rgba(255, 255,255, 0.2);
-  color:  var(--accent2-color);
+  background-color: rgba(255, 255,255, 0.1);
+  color:  var(--span-color);
   bottom: 50%;
   left: 5%;
   width: 40%;
