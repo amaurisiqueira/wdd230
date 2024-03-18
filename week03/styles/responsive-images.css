@@ -1,0 +1,11 @@
+.hero {
+    display: block;
+    align-items: center;
+    border: 2px solid lightblue;
+    width: 100%;
+    opacity: .9;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+}

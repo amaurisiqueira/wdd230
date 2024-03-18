@@ -87,6 +87,16 @@
       </ul>
     </nav>
     <main>
+
+      <div class="hero">
+        <picture>
+            <source media="(max-width: 400px )" srcset="week03/images/hero-small.webp">
+            <source media="(max-width: 960px)" srcset="week03/images/hero-medium.webp">
+            <img src="week03/images/hero-large.webp"   width="1400" height="700" alt="Image of temple Bern Switzeland">
+        </picture>
+        <span>Temple of Bern</span>
+      </div>
+
       <div class="unionH2">
     
         <h2>WDD-230:</h2>
@@ -108,32 +118,37 @@
                 href="week02/design.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Design</a
-              >
+                >Design</a>
               |
               <a
                 href="week02/bom.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >DOM Manipulation</a
-              >
+                >DOM Manipulation</a>
             </li>
-            <li>Week 03:</li>
+            <li>Week 03:<a href="week03/images/landscape.webp">WebP</a>| <a href="week03/lazyload.html">Lazy</a> | <a href="week03/responsive-images.html">Image responsive</a>  | <a href="week03/chapters.html">Chapters</a>  </li>
             <li>Week 04:</li>
             <li>Week 05:</li>
             <li>Week 06:</li>
           </ul>
         </section>
-
+         
         <section class="information">
           <h3 class="card">Information</h3>
           <ul>
             <li>Santiago, Chile:</li>
             <li>19 &#8451; - Sunshine</li>
-            <li>Page visits:1</li>
+            <li>Page visits:<span class="manyTimesVisiting">#</span></li>
           </ul>
         </section>
       </div>
+
+    <div class="map"> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6658.182392404216!2d-70.62681200399939!3d-33.44693050317959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1710723680440!5m2!1ses-419!2scl" loading="lazy" title="Barrio Italia" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    
+
       <footer>
         <p>
           ©<span id="myCopyRightYear"></span> | Amauri Siqueira | Santiago Chile
@@ -145,6 +160,7 @@
       <script src="scripts/getLastChange.js"></script>
       <script src="scripts/getHamburgMenu.js"></script>
       <script src="scripts/getDarkMode.js"></script>
+      <script src="scripts/getTimesVisitring.js"></script>
     </main>
   </body>
 </html>
