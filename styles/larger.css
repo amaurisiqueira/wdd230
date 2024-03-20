@@ -363,3 +363,10 @@ iframe {
   /*border: 20px solid red;*/
   
 }
+
+
+picture .perfil-author {
+  width: 50px;
+  height: auto; 
+}
+ 

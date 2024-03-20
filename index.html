@@ -44,7 +44,7 @@
     <title>Amauri Siqueira - WDD 230 - Web Frontend Development"</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="styles/normalize.css"
     >
     <link rel="stylesheet" href="styles/larger.css" >
     <link rel="stylesheet" href="styles/base.css" >
@@ -52,18 +52,24 @@
   </head>
   <body>
     <header>
-      <img
-        src="images/profile.webp"
-        alt="Image of profile of author"
-        width="75"
-        height="100"
-      >
+
+      <picture>
+        <source media="(max-width: 400px )" srcset="images/profile-small.webp">
+        <source media="(max-width: 960px)" srcset="images/profile-medium.webp">
+        <img class="perfil-author" src="images/profile-large.webp"   width="100" height="auto" alt="Image of Author Amauri Siqueira">
+      </picture>
+
+
+
+
+
       <h1>Amauri Siqueira</h1>
       <div id="mode">🕶️</div>
     </header>
 
-    <a id="menu" href="https://amaurisiqueira.github.io/wdd230" rel="noopener noreferrer">menu</a>
     <nav class="navbar">
+     
+        <button id="menu" aria-label="menu button"></button>
       <!--     
       <input class="checkbox" type="checkbox">
  
@@ -90,8 +96,8 @@
 
       <div class="hero">
         <picture>
-            <source media="(max-width: 400px )" srcset="week03/images/hero-small.webp">
-            <source media="(max-width: 960px)" srcset="week03/images/hero-medium.webp">
+            <source media="(max-width: 400px )" srcset="week03/images/hero-small.webp"> 
+            <source media="(max-width: 700px )" srcset="week03/images/hero-medium.webp"> 
             <img src="week03/images/hero-large.webp"   width="1400" height="700" alt="Image of temple Bern Switzeland">
         </picture>
         <span>Temple of Bern</span>
