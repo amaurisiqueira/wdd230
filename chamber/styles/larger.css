@@ -316,7 +316,33 @@
 
 
 
+/* DISCOVER  */
 
+.discover-main-content {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto;
+}
+
+.discover-main-description {
+  grid-row:   1/2;
+  grid-column: 1/2;
+}
+
+.discover-main-pictures {
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: auto;
+grid-row: 1/2;
+grid-column: 2/3;
+}
+
+.discover-main-pictures-title-image-image img {
+  width: 95%;
+  max-width: 900px;
+ }
+
+/* END DISCOVER*/
 
 
 
