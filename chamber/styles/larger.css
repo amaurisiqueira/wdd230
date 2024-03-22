@@ -132,61 +132,6 @@
     text-decoration: none;
   }
 
-  nav ul li {
-    flex: 1 1 auto;
-  }
-
-  nav {
-    background-color: var(--nav-background-color);
-
-    /* margin: 0 auto; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-
-  .navigation li {
-    display: block;
-    /* change state in small view */
-    flex: 1 1 100%;
-  }
-
-  .navigation a {
-    text-align: center;
-  }
-
-  #logo {
-    max-width:100px;
-    padding-left: 0px;
-    margin-left: 0px;
-    width: 3em;
-    height: 3em;
-  
-  }
-
-  .adjustLogoAndTitle {
-    margin-left: 0;
-    padding-left: 0;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-    grid-column: 1/2;
-  }
-  
-
-  #menu {
-    text-align: left;
-    display: none;
-  }
-
-  .contenido {
-    max-width: var(--MAX-WIDTH);
-    /*1200px;*/
-
-  }
-
 
  
 
