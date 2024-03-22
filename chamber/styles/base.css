@@ -96,7 +96,7 @@
 
 #logo {
 
-  max-width:10%;   /* <-- change to 100% if you want the logo to fill the top on mobile */
+   max-width:50px;    /* <-- change to 100% if you want the logo to fill the top on mobile */
   
   margin: 0;
   padding: 0;
