@@ -255,6 +255,18 @@
 }
 
 
+/* DISCOVER  */
+
+/* 1 */
+.discover-main-content {
+  display: grid ;
+  grid-template-columns: 40% 60% ;
+  grid-template-rows: auto ;
+  overflow: hidden ;
+}
+
+
+  
 
   
 
