@@ -289,6 +289,17 @@
  }
 
   
+  /*5*/
+ .discover-main-description .discover-main-description-title {
+  width: 100%; 
+  margin:0;
+  padding:0;
+  color: var(--paragraph-color-on-white);
+  font-family: var(--heading-font); 
+  font-size: 1.6em;
+  font-weight: 600;
+ }
+  
 
 }
 /*  end 890 px */
