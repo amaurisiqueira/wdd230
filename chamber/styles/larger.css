@@ -168,6 +168,15 @@
   }
 
 
+  .adjustLogoAndTitle {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    grid-column: 1/2;
+  }
+  
 
 }
 
