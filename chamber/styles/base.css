@@ -119,10 +119,6 @@ h2 {
   text-align: center;
 }
 
-/*
-
-*/
-
 header {
   display: flex;
   flex-direction: column;
@@ -149,15 +145,6 @@ header {
   max-width: 100%;
 }
 
-/*
-img {
-  padding: 0px;
-  margin: auto;
-  width: 100%;
-  height: auto;
-}
-*/
-
 
 .chamberName {
   color: var(--secondary-color);
@@ -177,18 +164,7 @@ img {
   /*border: #0d81d4 solid 5px; */
 }
 
-/*
-.comboNameAndTitle {
-  display: block;
-  margin: 0;
-  padding: 0;
-  grid-column: 2/3;
-  padding: 0;
-  width: 9.6em;
 
-
-}
-*/
 .comboNameAndTitle {
   display: block;
   margin: 0;
@@ -197,10 +173,6 @@ img {
 
   /****  if you want the title centered use the below instead: ***/
 
-  /*
-  margin: auto;
-  text-align: center;
-  */
 }
 
 
