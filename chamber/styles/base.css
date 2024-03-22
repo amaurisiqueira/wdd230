@@ -68,14 +68,13 @@
 
   /* Cambios de color para los textos */
   --headline-color-on-white: var(--heading-color-on-dark);
-  --paragraph-color-on-white: var(--paragraph-color-on-dark);
+  
   --paragraph-footer-color: #5f1111;
   --shadow-color-03: rgba(255, 255, 255, 0.1);
 
 
  
 
-  --headline-color-on-white: var(--primary-color-dark);
   /* headlines on a white background */
   --headline-color-on-color: var(--secondary-color-dark);
   /* headlines on a colored background */
@@ -231,7 +230,7 @@ nav {
 }
 
 #menu::before {
-  content: "≡";
+  content: '≡';
 }
 
 
@@ -242,7 +241,7 @@ nav {
 
 #menu.show::before {
   
-  content: "X";
+  content: 'X';
 }
 
 
