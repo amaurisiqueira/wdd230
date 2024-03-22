@@ -43,7 +43,6 @@
   --paragraph-color-on-white: #3F6634;
   /* paragraph text on a white background */
   --paragraph-color-on-color: var(--secondary-color);
-  ;
   /* paragraph text on a colored background */
   --paragraph-background-color: #3F6634;
   --nav-link-color: var(--secondary-color);
