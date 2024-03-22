@@ -6,8 +6,7 @@
     
     /*	position: absolute;*/
     top: 1rem;
-    right: 1rem;
-    font-size: 3rem;
+    right: 1rem;  
     cursor: pointer;
     font-size: 2rem;
     background-color: var(--secondary-color);
@@ -69,8 +68,6 @@
     grid-column: 2/3;
     padding: 0;
     width: 9.6em;
-    /*border: #15e348 solid 5px;*/
-
   }
 
   h2 {
@@ -288,8 +285,7 @@ grid-column: 2/3;
 }
 
 .discover-main-pictures-title-image-image img {
-  width: 900px;
-  max-width: 900px;
+  width: 900px;  
  }
 
 
