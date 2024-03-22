@@ -184,5 +184,12 @@
     display: none;
   }
 
+.contenido {
+    max-width: var(--MAX-WIDTH);
+    /*1200px;*/
+
+  }
+
+  
 }
 
