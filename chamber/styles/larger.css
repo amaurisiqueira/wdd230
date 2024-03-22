@@ -300,6 +300,17 @@
   font-weight: 600;
  }
   
+  /*6*/
+ .discover-main-pictures-title-image-title{
+  margin:0;
+  padding:0;
+  color: var(--paragraph-color-on-white);
+  font-family:var(--heading-font);
+  font-size: 1.6em;
+  font-weight: 600;
+ }
+
+  
 
 }
 /*  end 890 px */
