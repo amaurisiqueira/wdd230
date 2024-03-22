@@ -283,6 +283,11 @@
   grid-column: 2/3;
   }
 
+  /*4*/
+.discover-main-pictures-title-image-image img {
+  width: 900px;  
+ }
+
   
 
 }
