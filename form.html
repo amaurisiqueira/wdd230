@@ -48,6 +48,7 @@
     >
     <link rel="stylesheet" href="styles/larger.css" >
     <link rel="stylesheet" href="styles/base.css" >
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="images/favicon.ico" >
   </head>
   <body>
@@ -71,7 +72,7 @@
       <svg  class ="icons closeBurger" viewBox="0 0 14 14" height="14px" version="1.1"  width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd"  stroke="none" stroke-width="1"><g fill="#000000" id="Core" transform="translate(-341.000000, -89.000000)"><g id="close" transform="translate(341.000000, 89.000000)"><path d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z" id="Shape"/></g></g></g></svg>
   -->
       <ul class="menu navigation">
-        <li class="active"><a href="#" rel="noopener noreferrer">Home</a></li>
+        <li><a href="index.html" rel="noopener noreferrer">Home</a></li>
         <li>
           <a href="chamber/index.html" rel="noopener noreferrer">Chamber</a>
         </li>
@@ -83,72 +84,43 @@
             >Site Plan</a
           >
         </li>
-        <li><a href="form.html" rel="noopener noreferrer">Form</a></li>
+        <li  class="active"><a href="#" rel="noopener noreferrer">Form</a></li>
       </ul>
     </nav>
-    <main>
+    <main id="form-main">
+ 
 
-      <div class="hero">
-        <picture>
-            <source media="(max-width: 400px )" srcset="week03/images/hero-small.webp"> 
-            <source media="(max-width: 700px )" srcset="week03/images/hero-medium.webp"> 
-            <img src="week03/images/hero-large.webp"   width="1400" height="700" alt="Image of temple Bern Switzeland">
-        </picture>
-        <span>Temple of Bern</span>
-      </div>
 
-      <div class="unionH2">
+      <form action="record.html" method="get">
+        <fieldset>
+            <label>Username: <input type="text" name="username" id="username" class="required" required></label>
+            <label>Password: (at least 8 alphanumeric char long) <input type="password" id="phrase" class="required" name="phrase" pattern="[a-zA-Z0-9]{8,20}" required></label>
+            <label>Re-enter Your Password: <input type="password" id="phrase2" class="required" name="phrase2" required></label>
+            <div id="formmessage"></div>
+            
+            <label>Email: <input type="email" name="email" class="required" id="email" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+            
+            <label>Rating: <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist></label>
+
+                <div id="rangevalue" class="lowRating">1</div>
+        </fieldset>
+        <input type="submit" value="Create User">
+    </form>
     
-        <h2>WDD-230:</h2>
-        <h2>Web Frontend Development</h2>
-      </div>
-      <div class="myContainerGrid">
-        <section class="learning-activity">
-          <h3 class="card">Learning Activity</h3>
-          <ul>
-            <li>
-              Week 01:<a href="#" rel="noopener noreferrer">Layout</a> |
-              <a href="#" rel="noopener noreferrer">Media Query</a>|<a href="#"
-                >JS Pen</a
-              >
-            </li>
-            <li>
-              Week 02:
-              <a
-                href="week02/design.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Design</a>
-              |
-              <a
-                href="week02/bom.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                >DOM Manipulation</a>
-            </li>
-            <li>Week 03:<a href="week03/images/landscape.webp">WebP</a>| <a href="week03/lazyload.html">Lazy</a> | <a href="week03/responsive-images.html">Image responsive</a>  | <a href="week03/chapters.html">Chapters</a>  </li>
-            <li>Week 04: <a href="week04/pseudoclass.html">Pseudo class</a>  </li>
-            <li>Week 05:</li>
-            <li>Week 06:</li>
-          </ul>
-        </section>
-         
-        <section class="information">
-          <h3 class="card">Information</h3>
-          <ul>
-            <li>Santiago, Chile:</li>
-            <li>19 &#8451; - Sunshine</li>
-            <li>Page visits:<span class="manyTimesVisiting">#</span></li>
-          </ul>
-        </section>
-      </div>
-
-    <div class="map"> 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6658.182392404216!2d-70.62681200399939!3d-33.44693050317959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1710723680440!5m2!1ses-419!2scl" loading="lazy" title="Barrio Italia" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
-    
-
+    </main>
+ 
       <footer>
         <p>
           ©<span id="myCopyRightYear"></span> | Amauri Siqueira | Santiago Chile
@@ -161,6 +133,7 @@
       <script src="scripts/getHamburgMenu.js"></script>
       <script src="scripts/getDarkMode.js"></script>
       <script src="scripts/getTimesVisitring.js"></script>
-    </main>
+      <script src="scripts/formValidation.js"></script>
+  
   </body>
 </html>

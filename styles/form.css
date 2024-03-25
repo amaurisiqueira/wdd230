@@ -1,0 +1,122 @@
+:root{
+    --validation-error-color: #B00003;
+    --font-size: 2em;
+    --font-size-label: 1.1rem;
+    --background-color:var(   --accent1-color);
+}
+ 
+#form-main{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    color:var(--accent2-color);
+    align-items: center;
+}
+form {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+fieldset{
+    width: 90%;
+    max-width:300px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="range"]
+{
+    display:block;
+	padding: 10px;
+	margin-bottom: 1rem;
+	font-size: var(--font-size);
+    width:90%
+}
+input[type="range"]{
+    padding:0;
+}
+label{
+    color: var(--accent2-color);
+    font-size:  var( --font-size-label) ;
+    display:block;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#formmessage {
+	display: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: var(--validation-error-color);
+    text-align: left;
+}
+
+#formmessage .dark-mode {
+	display: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: var(--validation-error-color-darkr-color);
+    text-align: left;
+}
+
+
+#rating {
+    margin-top: 5px;
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: var(--font-size);
+    text-align: left;
+}
+#rangevalues {
+	display: flex;
+	margin: 0;
+	width: 190px;
+}
+
+#rangevalues option {
+    color: var(--accent2-color);
+    
+        background-color: var( --accent1-color);
+	flex: 1 1 auto;
+}
+
+ 
+
+input[type='submit']{
+    border: none;
+    color: var(--accent2-color);
+ 
+   /* background-color: var(--background-color);  */
+   background-color: var( --accent1-color);
+ 
+    font-size: var(--font-size);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 300px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+     
+}
+
+ 
+
+.lowRating{
+    color:var(--accent1-color  )
+}
+
+.midRating{
+    color:var(--primary-color)
+}
+ 
+
+.highRating{
+    color:var(--accent2-color)
+}
