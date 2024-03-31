@@ -539,3 +539,105 @@ footer p {
     display: none;
   }
  /* END DISCOVER  */
+
+ /* JOIN */
+ .join-main-content {
+    display: grid;
+   /* grid-template-columns: 60% 40%; */
+   grid-template-columns: 90%;
+ }
+
+  .join-subscription-level , main form {
+  max-width: 800px;
+  margin: 20px auto;
+
+  padding: 20px;
+  background: var(--main-bg-color);
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.8);
+  grid-column: 1;
+}
+
+
+.join-form fieldset {
+  margin: 0;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .5rem 2%;
+  
+}
+
+.join-form , .join-subscription-level {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: .5rem 2%;
+}
+
+.join-form legend {
+  color: #17333B;
+  padding: 0 .5rem;
+}
+
+.join-form label , .join-subscription-level p {
+  
+  display: block;
+  text-align: left;
+  padding-top: .8rem;
+  color: var(--paragraph-color-on-white);
+  font-size: 20px;
+}
+
+textarea {
+  min-width:  300px; 
+  max-width:  425px; 
+  max-height: 300px;
+  min-height: 200px;
+}
+
+.join-form input[type="text"],
+.join-form input[type="tel"],
+.join-form input[type="email"],
+.join-form input[type="url"],
+.join-form input[type="date"],
+.join-form input[type="number"] ,
+.join-form select , .join-form textarea  {
+  background-color: #fff;
+  display: block;
+  border: solid 1px #333;
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: .75rem;
+  color: #333;
+  width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+ 
+.join-form input[type="radio"],
+.join-form input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.join-form button {
+  border: none;
+  background-image: linear-gradient(#265656, #0c1c20);
+  color: #fff;
+  border-radius: 6px;
+  padding: .8rem;
+  width: 96%;
+  max-width: 400px;
+  margin: 2rem 2% 2rem 2%;
+  box-shadow: 1px 1px 4px #333;
+}
+
+.join-form input:required {
+  border-left: solid 8px red;
+}
+
+.join-form input:required:valid {
+  border-left: solid 8px green;
+}
