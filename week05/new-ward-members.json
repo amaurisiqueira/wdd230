@@ -1,0 +1,38 @@
+[
+    {
+        "family-name": "Perez",
+        "date-moved-to-ward": "2024",
+        "number-of-people": "2",
+        "visited-by-bishopric": "true",
+        "members": [
+            {
+                "name": "Marcelo",
+                "gender": "male",
+                "birthdate": "04/30/1970"
+            },
+            {
+                "name": "Antonia",
+                "gender": "female",
+                "birthdate": "08/20/1980"
+            }
+        ]
+    },
+    {
+        "family-name": "Maldonado",
+        "date-moved-to-ward": "2023",
+        "number-of-people": "2",
+        "visited-by-bishopric": "false",
+        "members": [
+            {
+                "name": "Pedro",
+                "gender": "male",
+                "birthdate": "04/30/1980"
+            },
+            {
+                "name": "Josefina",
+                "gender": "female",
+                "birthdate": "08/20/1982"
+            }
+        ]
+    }
+]
