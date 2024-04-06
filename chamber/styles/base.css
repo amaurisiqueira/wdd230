@@ -641,3 +641,37 @@ textarea {
 .join-form input:required:valid {
   border-left: solid 8px green;
 }
+
+
+
+
+/*  Directory */
+
+.list-menu {
+
+  margin: 1rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.list-menu button {
+  padding: 0.4rem;
+  font-weight: 500;
+}
+
+.myDivDirectoryContainer  {
+  width: 100px;
+  height: 200px;
+}
+
+
+.myDivDirectoryContainer.grid {
+  
+    background-color: #443a22;
+}
+
+.myDivDirectoryContainer.list {
+  
+    background-color: #0c1c20;
+}

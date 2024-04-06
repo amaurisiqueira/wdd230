@@ -3,11 +3,20 @@
     {
     "names":"Sociedad 0306",
     "addresses":"Av. Santa Isabel 0306",
-    "phoneNumbers":"98663-1234",
+    "phoneNumbers":"569-663-1234",
     "website":"https://www.instagram.com/sociedad0306/",
     "imageName": "bar-sociedad-4-small.webp",
-    "membershipLevel":"NP Membership",
+    "membershipLevel":"NP",
     "information":"An old vulcanization of Av. Santa Isabel became one of the favorite bars of many in the Italia neighborhood, Sociedad 0306. One of the currently fashionable establishments in this sector of Providencia and which boasts two floors and a terrace lit all year round, which is open in summer and closed and well heated in winter."
+    } ,
+    {
+        "names":"Café Bovary",
+        "addresses":"Julio Prado 1242",
+        "phoneNumbers":"562-222 57147",
+        "website":"https://www.instagram.com/bovarycafe/?hl=es",
+        "imageName": "bovary-19-small.webp",
+        "membershipLevel":"Silver",
+        "information":"Café Bovary has more than 20 years of history, the specialty coffee shop that since 2001 has occupied a beautiful house with large windows on the corner of Los Jesuitas and Julio Prado, bordering the Italia neighborhood."
     }
 
     ]
