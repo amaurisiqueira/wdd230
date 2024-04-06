@@ -236,10 +236,13 @@ nav .active {
 }
 
 .myContainerGrid ul li {
+  
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
   text-decoration: none;
   list-style-type: none;
+   
+
 }
 
 .myContainerGrid ul li a {
@@ -394,35 +397,47 @@ picture .perfil-author {
 }
 */
  
-.myclass-flex , #li-weather{
+.myclass-flex   {
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+
+.li-weather {
+  /*
+  display: grid;
+  grid-template-columns: 20px auto;
+  align-items: center;
+ */
+ display: flex; /* Cambiar a display flex */
   align-items: center;
 }
 
-figure { 
-  display: flex;
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
-}
+figure {  
 
-#weather-icon{ 
   margin: 0;
   padding: 0;
-  margin-left: 10px;
+  margin-left: auto;
+}
+ 
+#weather-icon{ 
+  /*
+  grid-column: 1; 
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;*/
+  margin-right: 10px; /* Ajustar margen derecho */
 }
 
 #current-temp
 {
+  
   margin: 0;
   padding: 0;
   margin-left: 10px;
+  
  
 }
-
-figcaption { 
-  margin: 0;
-  padding: 0;
-  margin-left: 10px;  
-}
-/* */
+  
