@@ -223,7 +223,7 @@ nav .active {
 .myContainerGrid {
   gap: 20px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns:  auto minmax(300px,40%);
 }
 
 .myContainerGrid h3 {
@@ -244,7 +244,13 @@ nav .active {
 
 .myContainerGrid ul li a {
   color: var(--nav-hover-link-color);
+ 
+}
 
+
+li a {
+  padding-left: 5px;
+  padding-right: 5px;
 }
  
 .learning-activity {
@@ -254,6 +260,14 @@ nav .active {
 .learning-activity ul {
   text-align: left; 
   padding-inline-start: 10px; 
+}
+
+.learning-activity li {
+  display: flex;
+  list-style: none; 
+  height: 40px;
+  align-items: center;
+  
 }
 
 .information {
@@ -369,7 +383,46 @@ picture .perfil-author {
   width: 50px;
   height: auto; 
 }
+ /*
+ {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1;
+  align-items: center;
+
  
+}
+*/
+ 
+.myclass-flex , #li-weather{
+  display: flex;
+  align-items: center;
+}
 
+figure { 
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
 
+#weather-icon{ 
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+#current-temp
+{
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+ 
+}
+
+figcaption { 
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;  
+}
 /* */
