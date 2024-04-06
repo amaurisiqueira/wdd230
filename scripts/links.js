@@ -20,9 +20,9 @@ async function getLinks() {
  
   function displayLinks(data) {
     let card = document.querySelector("#learning-activity");
-    let h3 = document.createElement("h3");
+    /*let h3 = document.createElement("h3");
     h3.textContent = "Learning Activities";
-    card.appendChild(h3);
+    card.appendChild(h3);*/
 
     for (let week of data.weeks) {
         let li = document.createElement("li");
