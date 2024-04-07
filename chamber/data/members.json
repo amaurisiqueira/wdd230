@@ -17,9 +17,7 @@
         "imageName": "bovary-19-small.webp",
         "membershipLevel":"Silver",
         "information":"Café Bovary has more than 20 years of history, the specialty coffee shop that since 2001 has occupied a beautiful house with large windows on the corner of Los Jesuitas and Julio Prado, bordering the Italia neighborhood."
-    }
-
-    ,
+    },
     {
         "names":"La Argentina Pizzería",
         "addresses":"Av Italia 989",
@@ -28,9 +26,7 @@
         "imageName": "la-argentina-4-small.webp",
         "membershipLevel":"Gold",
         "information":"La Argentina Pizzeria is a must in the Italy neighborhood. We are talking to you about the very Buenos Aires place that Juan Manuel Pena Passaro opened at the beginning of 2018 and that has remained with its seal and quality intact."
-    }
-    
-    ,
+    },
     {
         "names":"Perritos Chao!",
         "addresses":"Av Italia 1853",
@@ -39,9 +35,7 @@
         "imageName": "perrito-chao-5-small.webp",
         "membershipLevel":"NP",
         "information":"This small store recently opened in Terraza Italia, the space in Ñuñoa located on Av. Italia where, in addition to stores, you can find proposals such as those from Ori Waffles."
-    }
-    
-    ,
+    },
     {
         "names":"Siam Thai",
         "addresses":"Av Italia 1139",
@@ -50,10 +44,7 @@
         "imageName": "siam-thai-2-small.webp",
         "membershipLevel":"Gold",
         "information":"It started as a small Thai dive almost on the corner of Salvador and Av. Bilbao and then became one of the must-see bars in the Italia neighborhood, since in 2016 it moved to its current location, on Av. Italia."
-    }
-    
-
-    ,
+    },
     {
         "names":"Silvestre Bistró",
         "addresses":"Caupolicán 511",
@@ -62,9 +53,7 @@
         "imageName": "silvestre-9-small.webp",
         "membershipLevel":"Gold",
         "information":"It opened in 2014 and you probably know it as one of the best hidden terraces in the Italia neighborhood. From the outside it looks like a typical house in the area, but inside it houses a colorful terrace made with recycled furniture."
-    }
-
-    ,
+    },
     {
         "names":"Woh Vegan",
         "addresses":"Santa Isabel 0306",
@@ -74,10 +63,6 @@
         "membershipLevel":"NP",
         "information":"This kitchen was installed a few months ago in a space in the Italia neighborhood called Sociedad, which brings together four cuisines of different styles: vegan, Asian, sushi and sandwiches."
     }
-
-    
-
-
     ]
 
 }
