@@ -660,10 +660,11 @@ textarea {
   font-weight: 500;
 }
 
+/*
 .myDivDirectoryContainer  {
-  width: 100px;
-  height: 200px;
-}
+  width: 900px;
+  height:2000px;
+}*/
 
 
 .myDivDirectoryContainer.grid {
