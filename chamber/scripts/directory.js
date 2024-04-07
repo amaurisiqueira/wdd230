@@ -74,6 +74,7 @@ async function getLinks() {
             let nameMember = document.createElement('h2');
             let addressMember = document.createElement('p');
             let phoneMember = document.createElement('p');
+            let websiteMemberParagraph = document.createElement('p');
             let websiteMember = document.createElement('a');
             let imageMember = document.createElement('img');
             let levelMember = document.createElement('p');
@@ -88,7 +89,8 @@ async function getLinks() {
             phoneMember.textContent = `${member.phoneNumbers}`;
 
             console.log(member.website);
-            websiteMember.setAttribute('href',  member.website);
+            websiteMember.textContent = `Website`;
+            websiteMember.setAttribute('href', `${member.website}` );
 
             
             console.log(member.imageName);
@@ -101,16 +103,19 @@ async function getLinks() {
             levelMember.textContent = `Member Level ${member.membershipLevel}`;
             console.log(member.information);
             infoMember.textContent = `Member Level ${member.information}`;
-         
+            infoMember.setAttribute('class','memberInfo')
         
-           
+          
+
         
-        
+            card.setAttribute('class','myDivDirectoryContainer mysesion')
+
+            websiteMemberParagraph.appendChild(websiteMember);
         
             card.appendChild(nameMember);
             card.appendChild(addressMember);
             card.appendChild(phoneMember);
-            card.appendChild(websiteMember);
+            card.appendChild(websiteMemberParagraph);
             card.appendChild(imageMember);
             card.appendChild(levelMember);
             card.appendChild(infoMember);

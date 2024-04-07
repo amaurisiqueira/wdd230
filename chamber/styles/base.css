@@ -659,12 +659,12 @@ textarea {
   padding: 0.4rem;
   font-weight: 500;
 }
-
-/*
+ 
 .myDivDirectoryContainer  {
-  width: 900px;
-  height:2000px;
-}*/
+  max-width: var(--MAX-WIDTH);
+  width: 90%;
+  
+} 
 
 
 .myDivDirectoryContainer.grid {
@@ -675,4 +675,89 @@ textarea {
 .myDivDirectoryContainer.list {
   
     background-color: #0c1c20;
+}
+
+.myDivDirectoryContainer section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem; 
+  background-color: var(--secondary-color);
+}
+
+.myDivDirectoryContainer.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.myDivDirectoryContainer.grid section {
+	text-align: center;
+   border:red solid 10px; 
+}
+
+.myDivDirectoryContainer.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.myDivDirectoryContainer.grid  section > * {
+	margin: 0.1rem;
+}
+
+.myDivDirectoryContainer.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.myDivDirectoryContainer.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.myDivDirectoryContainer  section {
+	/* formato de 3 columnas display: grid;
+	grid-template-columns: 2fr 1fr 1fr;*/
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.myDivDirectoryContainer.list section > * {
+	margin: 0 1rem;
+}
+
+.myDivDirectoryContainer.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.myDivDirectoryContainer.list section  h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.myDivDirectoryContainer.list section:nth-child(even) {
+	background-color:  red;/* #bed;*/
+}
+
+.myDivDirectoryContainer section  h3 {
+	font-size: 1.5rem;
+}
+
+.myDivDirectoryContainer section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+.myDivDirectoryContainer section .memberInfo {
+  padding: 10px;
+  border:  rgba(255, 255, 255, 0.5)  solid 1px;
+}
+
+.myDivDirectoryContainer section  a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+.myDivDirectoryContainer section img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
 }
