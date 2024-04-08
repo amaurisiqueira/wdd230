@@ -222,6 +222,16 @@
   gap: 10px;
 }
 
+.myDivDirectoryContainer.grid.index {
+	display: grid;
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-gap: 5px;
+  grid-column-gap: 5px;
+  grid-column: 1/4;
+  grid-row: 2/3;
+	
+}
+
 
 .events {
   grid-column: 1/3;

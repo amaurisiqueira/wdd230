@@ -303,7 +303,8 @@ footer p {
 
 
 .myEventsContainer {
-  display: grid;
+  /*display: grid;*/ 
+  display: block; 
   grid-template-columns: 1fr;
   grid-template-rows: 5fr 5fr 1fr 5fr 5fr 5fr;
   row-gap: 20px;
@@ -329,19 +330,19 @@ footer p {
     font-size: 1em;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-   
  }
  
 
 
-  .weather {
-    grid-column: 1/1;
-    grid-row: 2/3;
+  .tiempo {
+    /*min-width: 300px;*/
+    grid-column: 3;
+    grid-row: 1;
     font-family: 'Noto Serif Malayalam', serif; 
-    border: rgb(0, 47, 255) solid 2px;
+    border: rgb(0, 0, 0) solid 1px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-   
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.8);
  }
 
   
@@ -694,6 +695,14 @@ textarea {
   grid-column-gap: 5px;
 	
 }
+.myDivDirectoryContainer.grid.index {
+	display: block;
+	grid-template-columns:  1fr 1fr 1fr;
+	grid-gap: 5px;
+  grid-column-gap: 5px;
+	
+}
+
 
 .myDivDirectoryContainer.grid section {
 	text-align: center;
