@@ -663,8 +663,6 @@ textarea {
 .myDivDirectoryContainer  {
   max-width: var(--MAX-WIDTH);
   width: 100%;
-  
-  justify-content:baseline;
   background-color: var(--accent1-color);
 } 
 
