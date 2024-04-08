@@ -662,37 +662,44 @@ textarea {
  
 .myDivDirectoryContainer  {
   max-width: var(--MAX-WIDTH);
-  width: 90%;
+  width: 100%;
   
+  justify-content:baseline;
+  background-color: var(--accent1-color);
 } 
 
-
+/*
 .myDivDirectoryContainer.grid {
   
     background-color: #443a22;
+ 
+
 }
 
 .myDivDirectoryContainer.list {
-  
-    background-color: #0c1c20;
-}
+  display: flex;
+  flex-direction: column;
+} */ 
+ 
 
 .myDivDirectoryContainer section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 2px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem; 
+  margin-left: 1rem;
   background-color: var(--secondary-color);
 }
 
 .myDivDirectoryContainer.grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 5px;
-	align-items: center;
+  grid-column-gap: 5px;
+	
 }
 
 .myDivDirectoryContainer.grid section {
 	text-align: center;
-   border:red solid 10px; 
+ /*  border:red solid 10px; */
 }
 
 .myDivDirectoryContainer.grid img {
@@ -720,6 +727,15 @@ textarea {
 	padding: 0.25rem;
 }
 
+
+.myDivDirectoryContainer.list section {
+	  display: grid;
+    grid-template-columns: 3fr 3fr 2fr 0.3fr 2.5fr ;
+    margin: 0;
+    padding: 0.25rem;
+    text-align: left;
+}
+
 .myDivDirectoryContainer.list section > * {
 	margin: 0 1rem;
 }
@@ -727,15 +743,20 @@ textarea {
 .myDivDirectoryContainer.list section img {
 	display: none; /* smaller viewports only */
 }
+ 
 
-.myDivDirectoryContainer.list section  h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+.myDivDirectoryContainer.list section .memberInfo {
+  display: none;
 }
 
-.myDivDirectoryContainer.list section:nth-child(even) {
-	background-color:  red;/* #bed;*/
+.myDivDirectoryContainer.list section h2 ,
+.myDivDirectoryContainer.list section h3 , 
+.myDivDirectoryContainer.list section p {
+  font-size: small;
+  font-family: var(--heading-font);
 }
+
+
 
 .myDivDirectoryContainer section  h3 {
 	font-size: 1.5rem;
@@ -744,17 +765,38 @@ textarea {
 .myDivDirectoryContainer section p {
 	font-weight: 600;
 	font-size: smaller;
+  color:  var(--paragraph-color-on-white);
+  font-family: var(--heading-font);
+  padding: 0.2rem;
+
 }
+
+.myDivDirectoryContainer.list section:nth-child(even)  {
+  background-color:  rgba(255, 255, 255, 0.9)  ;
+} 
+
+.dark-mode .myDivDirectoryContainer.list  section:nth-child(even)  {
+
+  background-color:  rgba(0, 0, 0, 0.9)  ;
+} 
+
+
 .myDivDirectoryContainer section .memberInfo {
   padding: 10px;
   border:  rgba(255, 255, 255, 0.5)  solid 1px;
+  text-align:justify;
+}
+.myDivDirectoryContainer section .memberInfo::first-letter {
+  
+  font-size: large;
 }
 
 .myDivDirectoryContainer section  a {
-	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
+  color:  var(--paragraph-color-on-white);
+  text-decoration-color: var(--nav-background-color); 
+	letter-spacing: 1.0pt;
+   
 }
 
 .myDivDirectoryContainer section img {
