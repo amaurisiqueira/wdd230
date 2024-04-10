@@ -92,6 +92,9 @@
   --background-footer-color: var(--accent2-color);
 }
 
+#myCopyRightYear{
+  padding-right: 10px;
+}
 
 #logo {
 
@@ -265,11 +268,12 @@ body {
 footer {
   color: var(--paragraph-footer-color);
   background-color: var(--paragraph-background-color);
-  padding:5px;
+  padding:20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
 }
 
 footer p {
