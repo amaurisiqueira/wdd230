@@ -33,7 +33,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
  
@@ -58,17 +58,17 @@ function getResults(data) {
                     <p class="weather-wind-value">N/A </p>
     
     */
-    console.log(data);
+    // console.log(data);
 
-    console.log(data.wind.speed);
-    console.log(data.wind.deg);
+    // console.log(data.wind.speed);
+    // console.log(data.wind.deg);
 
 
       weatherWind.innerHTML =`${data.wind.speed} knots`;
       weatherWindValue.innerHTML=`${data.wind.deg}&deg;`;
  
 
-    console.log(data.weather[0]);
+    // console.log(data.weather[0]);
     weatherHumidityTitle.innerHTML = `${data.name}`;
     currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     weatherSky.innerHTML = `${data.weather[0].description}`;

@@ -1,3 +1,2 @@
-
-let date = new Date();
-document.getElementById("myCopyRightYear").innerHTML = date.getFullYear();
+let myDateForCopyRight = new Date();
+document.getElementById("myCopyRightYear").innerHTML = myDateForCopyRight.getFullYear();

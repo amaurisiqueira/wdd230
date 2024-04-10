@@ -2,24 +2,29 @@ const baseURL = "https://amaurisiqueira.github.io/wdd230/chamber/";
 const linksURL = baseURL +"data/members.json";
 
  const myDivContainer = document.querySelector(".myDivDirectoryContainer");
- 
- 
 
 
+
+//
+function filtrarMiembros(ParameterData) {
+
+    // console.log('filtro.' , ParameterData);
+    return ParameterData.members.filter(member => ( member.membershipLevel==='Silver' || member.membershipLevel==='Gold') );
+}
 
 
 async function getLinks() {
 
+    // console.log(linksURL);
+    const response = await fetch(linksURL)
+         .then(response => response.json())
+       .then(eachOne => {
+             return filtrarMiembros(eachOne ) ;
+        })
 
-    try {
-        const response = await fetch(linksURL);
-        const data = await response.json();
-        console.log(data);
-        displayLinks(data); // Llama a la función para mostrar los enlaces
-    } catch (error) {
-        console.error('Error fetching links:', error);
-    }
-
+        //// console.log('Filtrado');
+       // // console.log(response);
+        displayLinks(response) ;
 
   }
   
@@ -47,28 +52,46 @@ async function getLinks() {
 
     */
     
-    const arrayLength = data.members.length; // Corregir aquí
+    const arrayLength = data.length; // Corregir aquí
 
 
     
 
-
-    for (let i=0; i<3;i++) {
+    let  maxIteration=3;
+    //let lastRandom=[99,99,99];
+    let lastRandom=99;
+    for (let i=0; i<arrayLength;i++) {
       
+           if(maxIteration--<1) break;
  
+            let  randomIndex = Math.floor(Math.random() * arrayLength); // Número aleatorio entre 0 y arrayLength - 1
+           
+/*
+||
+            lastRandom[1]===randomIndex ||
+            lastRandom[2]===randomIndex  
+            */
+           while(
+            lastRandom===randomIndex 
+            ){
+        
 
-           let  randomIndex = Math.floor(Math.random() * arrayLength); // Número aleatorio entre 0 y arrayLength - 1
-           console.log('Índice aleatorio:', randomIndex);
+                 randomIndex = Math.floor(Math.random() * arrayLength); // Número aleatorio entre 0 y arrayLength - 1
+
+           }
+           lastRandom=randomIndex;
+
+
+           // console.log('Índice aleatorio:', randomIndex);
     
-           const selectedMember = data.members[randomIndex]; // Selecciona el miembro aleatorio
-           console.log('Miembro seleccionado:', selectedMember);
+           const selectedMember = data[randomIndex]; // Selecciona el miembro aleatorio
+           // console.log('Miembro seleccionado:', selectedMember);
 
                    
-            let member =data.members[randomIndex]; 
-            console.log('Miembro seleccionado:', member);
-      
+            let member =data[randomIndex]; 
+            // console.log('Miembro seleccionado:', member);
+            // console.log(member);
 
-            console.log(member);
             let card = document.createElement('section');//--- section
 
            
@@ -82,28 +105,28 @@ async function getLinks() {
             let levelMember = document.createElement('p');
             let infoMember = document.createElement('p');
      
-            console.log(member.names);
+            // console.log(member.names);
 
             nameMember.textContent = `${member.names}`;
-            console.log(member.addresses);
+            // console.log(member.addresses);
             addressMember.textContent = `${member.addresses}`;
-            console.log(member.phoneNumbers);
+            // console.log(member.phoneNumbers);
             phoneMember.textContent = `${member.phoneNumbers}`;
 
-            console.log(member.website);
+            // console.log(member.website);
             websiteMember.textContent = `Website`;
             websiteMember.setAttribute('href', `${member.website}` );
 
             
-            console.log(member.imageName);
+            // console.log(member.imageName);
             imageMember.setAttribute('src' ,   `${baseURL}/images/${member.imageName}`);
-            console.log(member.names);
+            // console.log(member.names);
             imageMember.setAttribute('alt' ,   `Image of ${member.names}`);
             imageMember.setAttribute('loading' , 'lazy');
             
-            console.log(member.membershipLevel);
+            // console.log(member.membershipLevel);
             levelMember.textContent = `Member Level ${member.membershipLevel}`;
-            console.log(member.information);
+            // console.log(member.information);
             infoMember.textContent = `Member Level ${member.information}`;
             infoMember.setAttribute('class','memberInfo')
         

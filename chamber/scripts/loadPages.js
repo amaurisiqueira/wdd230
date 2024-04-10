@@ -8,7 +8,7 @@ const myLoadPage=(pagina) =>{
             document.getElementById('contenido').innerHTML = data;
         })
         .catch(error => {
-            console.log('Error loading page:', error);
+            // console.log('Error loading page:', error);
         });
 }
 

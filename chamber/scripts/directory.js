@@ -8,13 +8,13 @@ const myDivContainer = document.querySelector(".myDivDirectoryContainer");
 
 //
 gridbutton.addEventListener("click", () => {
-	console.log("Enter in Grid");
+	// console.log("Enter in Grid");
 	myDivContainer.classList.add("grid");
 	myDivContainer.classList.remove("list");
 });
 
 listbutton.addEventListener("click", ()=>{
-    console.log("Enter in List");
+    // console.log("Enter in List");
     myDivContainer.classList.add("list");
 	myDivContainer.classList.remove("grid");
  
@@ -31,7 +31,7 @@ async function getLinks() {
     try {
         const response = await fetch(linksURL);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         displayLinks(data); // Llama a la función para mostrar los enlaces
     } catch (error) {
         console.error('Error fetching links:', error);
@@ -80,28 +80,28 @@ async function getLinks() {
             let levelMember = document.createElement('p');
             let infoMember = document.createElement('p');
      
-            console.log(member.names);
+            // console.log(member.names);
 
             nameMember.textContent = `${member.names}`;
-            console.log(member.addresses);
+            // console.log(member.addresses);
             addressMember.textContent = `${member.addresses}`;
-            console.log(member.phoneNumbers);
+            // console.log(member.phoneNumbers);
             phoneMember.textContent = `${member.phoneNumbers}`;
 
-            console.log(member.website);
+            // console.log(member.website);
             websiteMember.textContent = `Website`;
             websiteMember.setAttribute('href', `${member.website}` );
 
             
-            console.log(member.imageName);
+            // console.log(member.imageName);
             imageMember.setAttribute('src' ,   `${baseURL}/images/${member.imageName}`);
-            console.log(member.names);
+            // console.log(member.names);
             imageMember.setAttribute('alt' ,   `Image of ${member.names}`);
             imageMember.setAttribute('loading' , 'lazy');
             
-            console.log(member.membershipLevel);
+            // console.log(member.membershipLevel);
             levelMember.textContent = `Member Level ${member.membershipLevel}`;
-            console.log(member.information);
+            // console.log(member.information);
             infoMember.textContent = `Member Level ${member.information}`;
             infoMember.setAttribute('class','memberInfo')
         
